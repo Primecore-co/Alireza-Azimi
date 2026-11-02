@@ -24,12 +24,9 @@ This project presents my professional background, financial market experience, t
 
 ## Live Demo
 
-The live version will be available through GitHub Pages:
+**View my interactive resume:** [Open Interactive Resume](https://primecore-co.github.io/Alireza-Azimi/)
 
-[View Interactive Resume]([https://YOUR-USERNAME.github.io/alireza-azimi-resume/](https://primecore-co.github.io/Alireza-Azimi/))
-
-Replace `YOUR-USERNAME` with your GitHub username.
-
+The resume is hosted on GitHub Pages and opens directly in your browser.
 ## Run Locally
 
 1. Download or clone this repository.

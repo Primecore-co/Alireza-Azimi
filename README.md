@@ -26,7 +26,7 @@ This project presents my professional background, financial market experience, t
 
 The live version will be available through GitHub Pages:
 
-[View Interactive Resume](https://YOUR-USERNAME.github.io/alireza-azimi-resume/)
+[View Interactive Resume]([https://YOUR-USERNAME.github.io/alireza-azimi-resume/](https://primecore-co.github.io/Alireza-Azimi/))
 
 Replace `YOUR-USERNAME` with your GitHub username.
 

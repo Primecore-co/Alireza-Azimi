@@ -428,6 +428,49 @@ html[lang="en"] .nav-inner{direction:ltr}
 html[lang="en"] .lab-card{text-align:left;align-items:flex-start}
 html[lang="en"] .tool span{text-align:right}
 @media(max-width:960px){.language-toggle{margin-left:auto}}
+
+/* Mobile language switch fix */
+.language-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 48px;
+  min-width: 48px;
+  height: 42px;
+  position: relative;
+  z-index: 110;
+  visibility: visible;
+  opacity: 1;
+  white-space: nowrap;
+  margin-inline-start: auto;
+}
+
+@media (max-width: 720px) {
+  .nav-inner {
+    gap: 8px;
+    padding: 10px 12px;
+  }
+
+  .brand {
+    min-width: 0;
+    flex-shrink: 1;
+  }
+
+  .brand-text {
+    min-width: 0;
+    font-size: 0.82rem;
+  }
+
+  .language-toggle {
+    display: inline-flex;
+    flex-shrink: 0;
+    margin-inline-start: auto;
+  }
+
+  .burger {
+    flex-shrink: 0;
+  }
+}
 </style>
 </head>
 <body id="top">
@@ -448,6 +491,7 @@ html[lang="en"] .tool span{text-align:right}
 
 
 <div class="progress" id="progress"></div>
+
 
 <!-- ================= NAV ================= -->
 <header class="nav" id="nav">
@@ -1373,9 +1417,13 @@ html[lang="en"] .tool span{text-align:right}
     try { localStorage.setItem('resume-language', lang); } catch(e){}
   }
   toggle.addEventListener('click',()=>switchLanguage(html.lang === 'en' ? 'fa' : 'en'));
-  let preferred = 'fa';
-  try { preferred = localStorage.getItem('resume-language') || 'fa'; } catch(e){}
-  if(preferred === 'en') switchLanguage('en');
+  let preferred = 'en';
+
+try {
+  preferred = localStorage.getItem('resume-language') || 'en';
+} catch (e) {}
+
+switchLanguage(preferred);
 })();
 </script>
 
